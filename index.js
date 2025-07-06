@@ -24,30 +24,10 @@ document.querySelector('#start').addEventListener('click', function () {
                 s++;
             }
             ms++;
-            if (ms < 10) {
-                msecond.innerHTML = '0' + ms;
-            } else {
-                msecond.innerHTML = ms;
-            }
-            if (s < 10) {
-
-                second.innerHTML = '0' + s;
-            }
-            else {
-                second.innerHTML = s;
-            }
-            if (m < 10) {
-
-                minute.innerHTML = '0' + m;
-            } else {
-                minute.innerHTML = m;
-            }
-
-            if (h < 10) {
-                hour.innerHTML = '0' + h;
-            } else {
-                hour.innerHTML = h;
-            }
+            msecond.innerHTML = ms < 10 ? '0' + ms : ms;
+            second.innerHTML = s < 10 ? '0' + s : s;
+            minute.innerHTML = m < 10 ? '0' + m : m;
+            hour.innerHTML = h < 10 ? '0' + h : h;
         }, 10)
     }
 })
