@@ -11,13 +11,30 @@ body {
     color: rgb(247, 87, 87);
 }
 
+#buttons {
+    display: flex;
+    align-items: center;
+}
+
+#start-box,
+#stop-box,
+#reset-box {
+    width: 125px;
+}
+
 button {
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: 0;
+    background-color: rgb(247, 87, 87);
     font-size: 25px;
     cursor: pointer;
+}
+
+button:active {
+    height: 90px;
+    width: 90px;
 }
 
 #container {
@@ -25,4 +42,14 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#Laps-record {
+    font-size: 50px;
+    color: rgb(81, 164, 253)
+}
+
+#lap-count {
+    font-size: 60px;
+    color: rgb(247, 87, 87);
 }
